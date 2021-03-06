@@ -3,6 +3,5 @@ numpy
 pandas
 streamlit
 tensorflow
-keras
 matplotlib
 
