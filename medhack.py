@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import os 
 import matplotlib.pyplot as plt 
-import tensorflow as tf 
+#import tensorflow as tf 
 from tensorflow import keras
 #from keras.models import load_model
 from tensorflow.keras.preprocessing import image 
