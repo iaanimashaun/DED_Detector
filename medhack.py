@@ -54,7 +54,7 @@ st.write('You selected %s' % filename)
 #file_selector('/Users/aderemifayoyiwa/Downloads/Aderemi')
 
 def load_mdl():
-  model = tf.keras.models.load_model('/Users/aderemifayoyiwa/Downloads/model')
+  model = keras.models.load_model('/Users/aderemifayoyiwa/Downloads/model')
   return model
 
 def predict_class(path):
