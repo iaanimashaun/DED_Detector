@@ -1,12 +1,12 @@
 import streamlit as st
 import numpy as np
-import pandas as pd
+#import pandas as pd
 import os 
 import matplotlib.pyplot as plt 
-#import tensorflow as tf 
-from tensorflow import keras
-#from keras.models import load_model
-from tensorflow.keras.preprocessing import image 
+#import tensorflow  
+#from tensorflow import keras
+from keras.models import load_model
+#from tensorflow.keras.preprocessing import image 
 
 st.title('X_ray Image Classifier')
 
@@ -59,9 +59,9 @@ def load_mdl():
 
 def predict_class(path):
 
-  #img = plt.imread(file)
-  #img = img.resize((224,224))
-  img=image.load_img(path, target_size=(224, 224))
+  img = plt.imread(path)
+  img = img.resize((224,224))
+  #img=image.load_img(path, target_size=(224, 224))
 
   x=image.img_to_array(img)
   x=np.expand_dims(x, axis=0)
