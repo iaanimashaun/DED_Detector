@@ -1,7 +1,7 @@
 
 
 streamlit
-keras
+
 matplotlib
 numpy
-tensorflow
+tensorflow==2.4.1
