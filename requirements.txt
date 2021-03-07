@@ -4,3 +4,4 @@ streamlit
 keras
 matplotlib
 numpy
+tensorflow
