@@ -1,8 +1,5 @@
 
-numpy
-pandas
+
 streamlit
-keras
-matplotlib
 tensorflow
 
