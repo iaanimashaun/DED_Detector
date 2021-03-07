@@ -1,7 +1,5 @@
 
-
 streamlit
-
 matplotlib
 numpy
 tensorflow==2.4.1
