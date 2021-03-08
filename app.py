@@ -9,24 +9,24 @@ import base64
 #from keras.models import load_model
 from tensorflow.keras.preprocessing import image 
 
-main_bg = 'images\back.jpg'
-main_bg_ext = 'jpg'
+#main_bg = r'images\back.jpg'
+#main_bg_ext = 'jpg'
 
-st.markdown(
-    f"""
-    <style>
-    .reportview-container {{
-        background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
-    }}
-    </style>
-    """,
-   unsafe_allow_html=True
-)
+#st.markdown(
+  #  f"""
+  #  <style>
+  #  .reportview-container {{
+  #      background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
+  #  }}
+  #  </style>
+ #   """,
+#   unsafe_allow_html=True
+#)
 
 
 
 st.markdown(' # **DED - Detector**')
-st.image('images\retina.jpg')
+st.image(r'images\retina.jpg')
 expander = st.sidebar.beta_expander('Want to see a retinal scan image classified?')
 expander.write('Wait for it...')
 
