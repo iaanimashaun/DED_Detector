@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}DED Detector{% endblock %}
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DED Detector</title>
+</head>
+<body>
+    <img src=".\static\images\retina.jpg" alt="">
+
+    <h1>Introduction</h1>
+    <p>Diabetes is becoming a global epidemic with the number of people affected worldwide rising from 108 million in 1980 to an estimated 425 million in 2017, and an estimated 629 million in 2045.
+          Diabetic retinopathy is a complication of diabetes. It is caused by high blood sugar levels damaging the back of the eye (retina). It can cause blindness if left undiagnosed and untreated.The prevalence of diabetic retinopathy (DR), a primary cause of blindness and vision loss worldwide, was estimated at 93 million in 2012 out of which 28 million people had vision-threatening DR, this is also expected to further increase.
+       Diabetic eye disease is a leading cause for blindness registration among working age adults in England and Wales. Diabetic retinopathy accounts for 4% of an estimated 1.93 million people living with sight loss in the UK. With the increasing prevalence of diabetes it is also of public health importance to address diabetic eye screening
+        </p>
+
+    <h1>Problem Statement</h1>
+    <p> 
+     Increased rate of diabetes and ageing population poses significant challenge to performing diabetic retinopathy (DR) screening for patients. These screenings are mostly based on the analysis of fundus photographs by specialist. The cost of such systems can put substantial strain on the healthcare systems when both financial and human resources are often in short supply and scaling and sustaining such systems has been found to be challenging.
+        </p>
+     <h1>Goal</h1>
+     <p>Goal
+     Our goal for this project is: To train an algorithm that can detect abnormal (unhealthy) retinal images. To help increase access to screenings for diabetic retinopathy and \nother eye diseases. To help reduce the cost while improving screening accuracy. Patients can visit a health screening centre that takes a picture of the eyes and tells you when you need to see a doctor.
+        </p>
+        <h1>Exploratory Data Analysis</h1>
+
+        <p>Data Source: <a href="https://www.kaggle.com/c/aptos2019-blindness-detection/overview ">aptos2019-blindness-detection</a>
+            Big Data: 20GB
+            Sample subset
+            Train data: 2931 images, Validation data: 731 images (20%)</p>
+
+
+        <img src="./static/images/piechart.png" alt="Pie chart" />
+
+
+            <h1>Preprocessing</h1>
+            <p>Applied Gaussian filter, Resizing - (224, 224) and other transformations('~500MB')
+                <img src=".\static\images\gaussianfilter.png" alt="Gaussian Filter">
+               </p>
+
+                
+        </body>
+</html>
+
+
+{% endblock %}
