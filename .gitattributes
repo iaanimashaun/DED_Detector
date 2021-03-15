@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 *.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
 *.h5 filter=lfs diff=lfs merge=lfs -text
+=======
+*.00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+*.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+>>>>>>> eec33f48ede35587f1c2f4686d2be068d979273b

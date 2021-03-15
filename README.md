@@ -1,2 +1,2 @@
-# RED_Detector
-Retinal Eye Disease Detector
+#DED_Detector
+Diabetic Eye Disease Detector
