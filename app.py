@@ -14,7 +14,7 @@ import base64
 
 
 st.markdown(' # **DED - Detector**')
-st.image(r'images\retina.jpg')
+st.image('images/retina.jpg')
 expander = st.sidebar.beta_expander('Want to try it out?')
 expander.markdown('[click here for demo](https://ded-detector.uc.r.appspot.com)')
 
@@ -25,14 +25,14 @@ expander.markdown('[MedHack 2021](https://devpost.com/software/red-detector)')
 
 
 expander = st.sidebar.beta_expander('Meet the team')
-expander.image('images\Ibrahim.png')
+expander.image('images/Ibrahim.png')
 expander.write('Ibrahim Animashaun')
 #expander.markdown('[email](https://mail.google.com/mail/u/0/?fs=1&to=iaanimashaun@gmail.com&su=SUBJECT&body=BODY&tf=cm)')
 expander.markdown('[Email](https://mail.google.com/mail/u/0/?fs=1&to=iaanimashaun@gmail.com&su=SUBJECT&body=BODY&tf=cm)    [GitHub](https://github.com/iaanimashaun)   [Linkedin](https://www.linkedin.com/in/iaanimashaun)')
 
 
 expander.write()
-expander.image('images\Aderemi_net_9760.jpg')
+expander.image('images/Aderemi_net_9760.jpg')
 expander.write('Aderemi Fayoyiwa')
 #expander.markdown('[Email](https://mail.google.com/mail/u/0/?fs=1&to=aderemifayoyiwa@gmail.com&su=SUBJECT&body=BODY&tf=cm)')
 expander.markdown('[Email](https://mail.google.com/mail/u/0/?fs=1&to=aderemifayoyiwa@gmail.com&su=SUBJECT&body=BODY&tf=cm)   [GitHub](https://github.com/AderemiF)   [Linkedin](https://www.linkedin.com/in/aderemi-fayoyiwa)')
@@ -72,8 +72,8 @@ expander.write('Resizing - (224, 224) and other transformations')
 expander.write('~500MB')
 
 expander = st.beta_expander('Plots')
-expander.image('images\piechart.png')
-expander.image(r'images\barchart.png')
+expander.image('images/piechart.png')
+expander.image('images/barchart.png')
 
 
 
@@ -85,7 +85,7 @@ expander = st.beta_expander('ML Algorithm used and model training')
 expander.write('Transfer Learning')
 expander.write('Model: CNN(EfficientNetB0)')
 expander.write('Validation accuracy: 74%')
-expander.image(r'images\accuracy.png')
+expander.image('images/accuracy.png')
 
 
 
