@@ -14,7 +14,7 @@ import base64
 
 
 st.markdown(' # **DED - Detector**')
-st.image('./images/retina.jpg')
+st.image('./images/retina.png')
 expander = st.sidebar.beta_expander('Want to try it out?')
 expander.markdown('[click here for demo](https://ded-detector.uc.r.appspot.com)')
 
@@ -32,7 +32,7 @@ expander.markdown('[Email](https://mail.google.com/mail/u/0/?fs=1&to=iaanimashau
 
 
 expander.write()
-expander.image('images/Aderemi_net_9760.jpg')
+expander.image('images/Aderemi_net_9760.png')
 expander.write('Aderemi Fayoyiwa')
 #expander.markdown('[Email](https://mail.google.com/mail/u/0/?fs=1&to=aderemifayoyiwa@gmail.com&su=SUBJECT&body=BODY&tf=cm)')
 expander.markdown('[Email](https://mail.google.com/mail/u/0/?fs=1&to=aderemifayoyiwa@gmail.com&su=SUBJECT&body=BODY&tf=cm)   [GitHub](https://github.com/AderemiF)   [Linkedin](https://www.linkedin.com/in/aderemi-fayoyiwa)')
