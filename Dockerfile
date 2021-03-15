@@ -1,6 +1,6 @@
 FROM python:3.7
 
-WORKDIR /RED-DETECTOR 
+WORKDIR /DED-DETECTOR 
 
 COPY requirements.txt ./requirements.txt 
 

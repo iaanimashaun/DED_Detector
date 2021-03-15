@@ -3,47 +3,44 @@ import numpy as np
 import pandas as pd
 import os 
 import matplotlib.pyplot as plt 
-import tensorflow as tf 
-from tensorflow import keras
+#import tensorflow as tf 
+#from tensorflow import keras
 import base64
 #from keras.models import load_model
-from tensorflow.keras.preprocessing import image 
-
-main_bg = r'images\back.jpg'
-main_bg_ext = 'jpg'
-
-st.markdown(
-    f"""
-    <style>
-    .reportview-container {{
-        background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
-    }}
-    </style>
-    """,
-   unsafe_allow_html=True
-)
+#from tensorflow.keras.preprocessing import image 
 
 
 
-st.markdown(' # **RED - Detector**')
+
+
+st.markdown(' # **DED - Detector**')
 st.image(r'images\retina.jpg')
-expander = st.sidebar.beta_expander('Want to see a retinal scan image classified?')
-expander.write('Wait for it...')
+expander = st.sidebar.beta_expander('Want to try it out?')
+expander.markdown('[click here for demo](https://ded-detector.uc.r.appspot.com)')
+
+
 
 expander = st.sidebar.beta_expander('Meet the team')
 expander.image('images\Ibrahim.png')
-expander.write('Ibrahim Animashaun \niaanimashaun@gmail.com \n https://github.com/iaanimashaun \n https://www.linkedin.com/in/iaanimashaun')
+expander.write('Ibrahim Animashaun')
+#expander.markdown('[email](https://mail.google.com/mail/u/0/?fs=1&to=iaanimashaun@gmail.com&su=SUBJECT&body=BODY&tf=cm)')
+expander.markdown('[Email](https://mail.google.com/mail/u/0/?fs=1&to=iaanimashaun@gmail.com&su=SUBJECT&body=BODY&tf=cm)    [GitHub](https://github.com/iaanimashaun)   [Linkedin](https://www.linkedin.com/in/iaanimashaun)')
+
+
 expander.write()
 expander.image('images\Aderemi_net_9760.jpg')
-expander.write('Aderemi Fayoyiwa \naderemifayoyiwa@gmail.com \nhttps://github.com/AderemiF \nhttps://www.linkedin.com/in/aderemi-fayoyiwa/')
-expander.write('') 
+expander.write('Aderemi Fayoyiwa')
+#expander.markdown('[Email](https://mail.google.com/mail/u/0/?fs=1&to=aderemifayoyiwa@gmail.com&su=SUBJECT&body=BODY&tf=cm)')
+expander.markdown('[Email](https://mail.google.com/mail/u/0/?fs=1&to=aderemifayoyiwa@gmail.com&su=SUBJECT&body=BODY&tf=cm)   [GitHub](https://github.com/AderemiF)   [Linkedin](https://www.linkedin.com/in/aderemi-fayoyiwa)')
+
+ 
 
 
 
 left_column, right_column = st.beta_columns(2)
 pressed = left_column.button('Digital image of retina')
-if pressed:
-	left_column.image('images\retina.jpg')
+#if pressed:
+#	left_column.image('images\retina.jpg')
     #left_column.write('Welcome on board!')
 
 st.markdown('# Introduction')
@@ -52,7 +49,7 @@ st.markdown(' ##### \nDiabetic retinopathy is a complication of diabetes. \nIt i
 st.markdown(' ##### \nDiabetic eye disease is a leading cause for blindness registration among \nworking age adults in England and Wales. \nDiabetic retinopathy accounts for 4% of an estimated 1.93 million people living \nwith sight loss in the UK. \nWith the increasing prevalence of diabetes it is also of public health importance to \naddress diabetic eye screening')
 
 st.markdown(' # Problem Statement')
-st.markdown('##### \nIncreased rate of diabetes and ageing population poses significant challenge \nto performing diabetic retinopathy (DR) screening for patients. \nThese screenings are mostly based on the analysis of fundus photographs by specialist.\nThe cost of such systems can put substantial strain on the healthcare systems when both \nfinancial and human resources are often in short supply and scaling and sustaining \nsuch systems has been found to be challenging.')
+st.markdown('##### \n * Increased rate of diabetes and ageing population poses significant challenge \nto performing diabetic retinopathy (DR) screening for patients. \n * These screenings are mostly based on the analysis of fundus photographs by specialist.\n * The cost of such systems can put substantial strain on the healthcare systems when both \nfinancial and human resources are often in short supply and scaling and sustaining \nsuch systems has been found to be challenging.')
 
 st.markdown('# Goal')
 st.markdown(' ##### \nOur goal for this project is: \n * To train an algorithm that can detect abnormal (unhealthy) retinal images. \n * To help increase access to screenings for diabetic retinopathy and \nother eye diseases. \n * To help reduce the cost while improving screening accuracy. \n * Patients can visit a health screening centre that takes a picture of the eyes and tells \nyou when you need to see a doctor.')
@@ -119,8 +116,7 @@ def file_selector(folder_path='.'):
 	filenames = os.listdir(folder_path) 
 	selected_filename = st.selectbox('Select a file', filenames) 
 	return os.path.join(folder_path, selected_filename) 
-filename = file_selector('./test_files/') 
-st.write('You selected %s' % filename[11:])
+
 
 #file_selector('/Users/aderemifayoyiwa/Downloads/Aderemi')
 @st.cache(suppress_st_warning=True)
@@ -135,13 +131,9 @@ def predict_class(path):
   x = np.expand_dims(x, axis=0)
 
   images = np.vstack([x])
-  with st.spinner('Loading Model. Wait for it...'):
-      model = load_mdl()
-      time.sleep(1)
-  st.success('Done!')
+  model = load_mdl()
   
-
-  classes = model.predict(images, batch_size=1)
+  classes = model.predict(images, batch_size=10)
 
   predicted_class = ''
   labels = ['Mild', 'Severe', 'Moderate', 'Proliferate_DR', 'No_DR']
@@ -155,7 +147,10 @@ def predict_class(path):
   return predicted_class
 
 
-st.markdown(' ## The predicted class is %s' % predict_class(filename))
+#filename = file_selector('./test_files/') 
+#st.write('You selected %s' % filename[13:])
+#pred = predict_class(filename)
+#st.write(' ## The predicted class is %s' % pred)
 
 
 
