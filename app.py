@@ -18,6 +18,10 @@ st.image(r'images\retina.jpg')
 expander = st.sidebar.beta_expander('Want to try it out?')
 expander.markdown('[click here for demo](https://ded-detector.uc.r.appspot.com)')
 
+expander = st.sidebar.beta_expander('Awards')
+expander.markdown('[MedHack 2021](https://devpost.com/software/red-detector)')
+
+
 
 
 expander = st.sidebar.beta_expander('Meet the team')
