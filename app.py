@@ -14,7 +14,7 @@ import base64
 
 
 st.markdown(' # **DED - Detector**')
-st.image('images/retina.jpg')
+st.image('./images/retina.jpg')
 expander = st.sidebar.beta_expander('Want to try it out?')
 expander.markdown('[click here for demo](https://ded-detector.uc.r.appspot.com)')
 
@@ -25,7 +25,7 @@ expander.markdown('[MedHack 2021](https://devpost.com/software/red-detector)')
 
 
 expander = st.sidebar.beta_expander('Meet the team')
-expander.image('images/Ibrahim.png')
+expander.image('./images/Ibrahim.png')
 expander.write('Ibrahim Animashaun')
 #expander.markdown('[email](https://mail.google.com/mail/u/0/?fs=1&to=iaanimashaun@gmail.com&su=SUBJECT&body=BODY&tf=cm)')
 expander.markdown('[Email](https://mail.google.com/mail/u/0/?fs=1&to=iaanimashaun@gmail.com&su=SUBJECT&body=BODY&tf=cm)    [GitHub](https://github.com/iaanimashaun)   [Linkedin](https://www.linkedin.com/in/iaanimashaun)')
