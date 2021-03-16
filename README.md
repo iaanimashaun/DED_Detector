@@ -5,7 +5,7 @@
 ---
 
 ## Description 📝
-A machine learning model was trained to detect Diabetic Eye Disease (DED) from a retina scan.
+A machine learning model was trained to detect Diabetic Eye Disease (DED) from retina scan images
 
 ---
 
