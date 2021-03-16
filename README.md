@@ -24,7 +24,7 @@ A machine learning model was trained to detect Diabetic Eye Disease (DED) from a
 
 ## How to use ⚒
 - Our model is deployed on Heroku 
-- To have a look at our presentation and test our model, click [here](https://ded-detector.herokuapp.com)
+- Checkout our presentation and test our model [here](https://ded-detector.herokuapp.com)
 
 ---
 
