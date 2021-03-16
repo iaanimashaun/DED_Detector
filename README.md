@@ -29,7 +29,7 @@ A machine learning model was trained to detect Diabetic Eye Disease (DED) from a
 ---
 
 ## Awards 🏆
-- Runner up [Hackhull-medhack-2021](https://devpost.com/software/red-detector)
+- Runner-up [Hackhull-medhack-2021](https://devpost.com/software/red-detector)
 
 ---
 
