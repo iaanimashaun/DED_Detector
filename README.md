@@ -1,6 +1,6 @@
 # DED_Detector
 
-![Image of the retina](https://www.verywellhealth.com/thmb/0CUTXmj76oB4ZRAQvim1-FSBPfE=/700x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-308783-003-e6958f3f1e50487c93b25596348056cd.jpg)
+![Image of the retina](https://visionsource-visionhealthinstitute.com/wp-content/uploads/sites/1041/2018/10/diabetes-retina.jpg)
 
 ## Description
 A machine learning model was trained to detect Diabetic Eye Disease (DED) from a retina scan.
