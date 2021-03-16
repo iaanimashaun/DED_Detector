@@ -60,7 +60,7 @@ st.markdown(' ##### \nOur goal for this project is: \n * To train an algorithm t
 
 st.markdown(' # Exploratory Data Analysis')
 expander = st.beta_expander('Data')
-expander.write('Source: https://www.kaggle.com/c/aptos2019-blindness-detection/overview')
+expander.markdown('Source: [Kaggle](https://www.kaggle.com/c/aptos2019-blindness-detection/overview)')
 expander.write('Big Data: 20GB')
 expander.write('Sample subset')
 expander.write('Train data: 2931 images, Validation data: 731 images (20%)')
