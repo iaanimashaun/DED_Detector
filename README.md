@@ -34,7 +34,7 @@ A machine learning model was trained to detect Diabetic Eye Disease (DED) from r
 ---
 
 ## Authors 👨🏾‍💻 👩🏾‍💻
-- **Ibrahim Animashaun** [Github](https://github.com/iaanimashaun) , [Email](https://mail.google.com/iaanimashaun@gmail.com)
-- **Aderemi Fayoyiwa** [Github](https://github.com/AderemiF) , [Email](https://mail.google.com/aderemifayoyiwa@gmail.com)
+- **Ibrahim Animashaun** [Github](https://github.com/iaanimashaun) , [Email](https://mail.google.com/mail/u/0/?fs=1&to=iaanimashaun@gmail.com&su=SUBJECT&body=BODY&tf=cm)
+- **Aderemi Fayoyiwa** [Github](https://github.com/AderemiF) , [Email](https://mail.google.com/mail/u/0/?fs=1&to=aderemifayoyiwa@gmail.com&su=SUBJECT&body=BODY&tf=cm)
 
 >_**Thanks for stopping by**_
