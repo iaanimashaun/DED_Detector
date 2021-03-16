@@ -10,9 +10,9 @@ A machine learning model was trained to detect Diabetic Eye Disease (DED) from a
 - Model: CNN(EfficientNetB0)
 
 ## Technologies
-|Google Cloud Platform| Google colab | Streamlit |
+|Python | Githubb | Heroku |
 |--- |--- |--- |
-|**Python** |**Github** | **Heroku** |
+|**Google Cloud Platform** |**Google Colab** | **Streamlit** |
 - Python
 - Github
 - Google Colab
