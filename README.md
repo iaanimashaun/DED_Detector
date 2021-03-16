@@ -2,12 +2,12 @@
 
 ![Image of the retina](https://www.davisopticians.co.uk/Uploads/Image/comp%20DRi.jpg "The retina") 
 
----
+***
 
 ## Description 📝
 A machine learning model was trained to detect Diabetic Eye Disease (DED) from a retina scan.
 
----
+***
 
 ## Machine learning model 🤖
 - Transfer learning
