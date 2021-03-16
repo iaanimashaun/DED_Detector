@@ -1,11 +1,10 @@
 # DED_Detector
 
 ![Image of the retina](https://www.davisopticians.co.uk/Uploads/Image/comp%20DRi.jpg "The retina") 
-https://visionsource-visionhealthinstitute.com/wp-content/uploads/sites/1041/2018/10/diabetes-retina.jpg
-
+---
 ## Description 📝
 A machine learning model was trained to detect Diabetic Eye Disease (DED) from a retina scan.
-
+---
 ## Machine learning model 🤖
 - Transfer learning
 - Model: CNN(EfficientNetB0)
