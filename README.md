@@ -1,5 +1,4 @@
 # DED_Detector
-Diabetic Eye Disease Detector
 
 ![Image of the retina](https://www.verywellhealth.com/thmb/0CUTXmj76oB4ZRAQvim1-FSBPfE=/700x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-308783-003-e6958f3f1e50487c93b25596348056cd.jpg)
 
