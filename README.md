@@ -1,6 +1,7 @@
 # DED_Detector
 
-![Image of the retina](https://visionsource-visionhealthinstitute.com/wp-content/uploads/sites/1041/2018/10/diabetes-retina.jpg "The retina")
+![Image of the retina](https://www.davisopticians.co.uk/Uploads/Image/comp%20DRi.jpg "The retina") 
+https://visionsource-visionhealthinstitute.com/wp-content/uploads/sites/1041/2018/10/diabetes-retina.jpg
 
 ## Description 📝
 A machine learning model was trained to detect Diabetic Eye Disease (DED) from a retina scan.
@@ -13,12 +14,6 @@ A machine learning model was trained to detect Diabetic Eye Disease (DED) from a
 |Python | Github | Heroku |
 |--- |--- |--- |
 |**Google Cloud Platform** |**Google Colab** | **Streamlit** |
-- Python
-- Github
-- Google Colab
-- Google Cloud Platform
-- Streamlit
-- Heroku
 
 ## How to use ⚒
 - Our model is deployed on Heroku 
