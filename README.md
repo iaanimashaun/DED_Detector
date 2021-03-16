@@ -9,7 +9,7 @@ A machine learning model was trained to detect Diabetic Eye Disease (DED) from a
 
 ---
 
-## Machine learning model 🤖
+## Machine Learning Model 🤖
 - Transfer learning
 - Model: CNN(EfficientNetB0)
 
