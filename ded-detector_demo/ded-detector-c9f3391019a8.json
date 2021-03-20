@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ded-detector",
+  "private_key_id": "c9f3391019a89c99b8a34d4a2c110e821b014c74",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC2dmYq5NOpxUVk\nk+aRw7svl8ysFhBg6XvRuugE9B1EvSmNBhvNv255O1vfCJt7fJTp92IGw7YkQS6t\nf8Js1x4OaSiL+do0coqjo4Kc2Phmjopcm/h7c8Ul6dtNkYJeZwB1pRwwIqYXPTbp\nYbLqeuvoOiI6ysNpLekJXazCzTPXW+8MVQESyrH7fh4t0I9WX5BytbzK8ucheH5o\nN2zpJI7Hfse+Up6RiH+8d2zfN0Bw8xQfJm6LNWHk2/a6rz/rqIoateQAd/Icq7Wn\nlvqRRZ+C8EvHTwD9vkxaFPDHNBzSA6YBV2ygWFoBLVUE5Ta9WoEKyENpO2CottHI\ntO10MzP1AgMBAAECggEAQPJI8Iit3LamuiO5BPZ+KPUn+bMK1mwVUjRsxOKdjmuk\noBlmCSjUKlvaGjvmmCBioxsWreC48xOuiTw6GOLDRI7iy1w+cr+4oIGhirHiTSL8\nlfVAj7TIHnQsxuH93RtduwJv06RpqUj1REIt3K+vS+Rxbarhvo0Eb3yD83z2MHfj\nc69I5kFA3dNJO4VQQ6iUbqj3aDKEyiZW/pQhdz+CFdHU49vZ9osrgRzHYpCrP2sz\nfybXvikQTN+3u3kU/hdqmJcQIdy9QvgdsQwRATVbr4V0neZRsO62YCQ7FLt5mlLZ\nVC5Ud88jXTxVFJGw/9PNQTNZpAPA0gDc5dKt86fbuwKBgQDaGTzNvisDPYhkde1E\nvwd/Io9eK6XS8c3p5SNfNvGCeT1r6+6lPyiCv+HkjnDArZsn3PCMlXr6IGAaMzly\nvNpYflUBl9NJgsd6mm+4Y+dt5wlh78y2I7QaRxBnXMgvHful3w5+kRaQRjblJxl5\nyhyziHhE0L+lMxeps9kW2aCucwKBgQDWK8jVmYdmoT/wCubHLQAhbneWtwcvOu4N\noR5m0vwrBjddSOivwIhAfyVubHZu/lolZbPlDfd7hvZhpM043XA96a8r9V81CnMQ\nMKFJBadnVZmTsjgr/VV1ZZ6AgU1YZt9UHQsAQ6QajQ427Ch2rq1OEOHdbXzZE3Bz\nmouWLoXR9wKBgHBjiP3M/YVR9DMwwfAnMMnHGXJBs9YcXSwmtC+gtJuztn8iuXvW\nLB4Um2eYL2pbDBViuWL4tMKoZF2cAAKsZygrEcscXfkHt5vqcZ/ne58a667YT/mc\nNHdGH6HkIhSFsuQrKeD3C1WVmTxFBc/I4zlxHej4WYnb5lnBICGyTCcZAoGASA+1\nZIFi+Jo67CaO3ed7SsRjgpeU2ERowrc6hnhpFoTh7gZRHImYjrL5Qj1GYDQ+2qRs\nsh5P7gVMMzCDSKXhVUOiiBTocu1QJ9tk+S/o0rEPmo11rv9vWK/Xc/+Nqbf7Xs7i\n27Tmq3RYmww81SoS79hoVtu3DUcoKA2Q9/gxWKMCgYBUHYqQXtjIHsM+d1DNfL6a\nvsEkQeRYVhR9iSLVhaiToN+J/xY/TQrIv3eTG0wEpP1goY/IiOiyIEG49jcco+Ce\n+cyqnf1mde7pO+rjZeLAe7swd9Yw8nFreHaeCN77zPr9T25+lz/5EaQmpVJVNo8F\nY2fGyJnGQbgRX9DhzriUCQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "ibrahim@ded-detector.iam.gserviceaccount.com",
+  "client_id": "114228804813704275497",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ibrahim%40ded-detector.iam.gserviceaccount.com"
+}

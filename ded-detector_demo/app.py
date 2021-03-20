@@ -6,9 +6,16 @@ import SessionState
 import streamlit as st
 import tensorflow as tf
 from utils import load_and_prep_image, classes_and_models, update_logger, predict_json
+from PIL import Image
+import imagehash
+import matplotlib.pyplot as plt
+import cv2
+import pickle
+from io import BytesIO
+
 
 # Setup environment credentials (you'll need to change these)
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'ded-detector-4f6c0b67bf82.json' # "daniels-dl-playground-4edbcb2e6e37.json" # change for your GCP key
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'ded-detector-c9f3391019a8.json' # "daniels-dl-playground-4edbcb2e6e37.json" # change for your GCP key
 PROJECT = "ded-detector" # change for your GCP project
 REGION = "us-central1" # change for your GCP region (where your model is hosted)
 
@@ -33,17 +40,28 @@ def make_prediction(image, model, class_names):
      pred_class (prediction class from class_names)
      pred_conf (model confidence)
     """
-    image = load_and_prep_image(image)
-    # Turn tensors into int16 (saves a lot of space, ML Engine has a limit of 1.5MB per request)
-    image = tf.cast(tf.expand_dims(image, axis=0), tf.int16)
-    # image = tf.expand_dims(image, axis=0)
-    preds = predict_json(project=PROJECT,
-                         region=REGION,
-                         model=model,
-                         instances=image)
-    pred_class = class_names[tf.argmax(preds[0])]
-    pred_conf = tf.reduce_max(preds[0])
-    return image, pred_class, pred_conf
+ 
+     
+    hash0 = imagehash.average_hash(Image.open(BytesIO(image)) )
+    hash1 = imagehash.average_hash(Image.open('retina.png'))
+    result = hash0 - hash1
+
+    not_retina = 'It seems you did not upload image of a retina scan'
+    if(result < 15):
+
+
+        image = load_and_prep_image(image)
+        # Turn tensors into int16 (saves a lot of space, ML Engine has a limit of 1.5MB per request)
+        image = tf.cast(tf.expand_dims(image, axis=0), tf.int16)
+        # image = tf.expand_dims(image, axis=0)
+        preds = predict_json(project=PROJECT,
+                            region=REGION,
+                            model=model,
+                            instances=image)
+        pred_class = class_names[tf.argmax(preds[0])]
+        pred_conf = tf.reduce_max(preds[0])
+        return image, pred_class, pred_conf
+    return 'Not a retina', not_retina, result/64*100
 
 # Pick the model version
 choose_model = st.sidebar.selectbox(

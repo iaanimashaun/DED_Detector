@@ -2,6 +2,13 @@
 import tensorflow as tf
 import googleapiclient.discovery
 from google.api_core.client_options import ClientOptions
+from PIL import Image
+import imagehash
+import matplotlib.pyplot as plt
+import cv2
+import pickle
+
+                        
 
 base_classes = ['Mild', 'Moderate', 'No_DR', 'Proliferative_DR', 'Severe']
 
@@ -66,22 +73,40 @@ def predict_json(project, region, model, instances, version=None):
 
     return response["predictions"]
 
+
+
+
+
 # Create a function to import an image and resize it to be able to be used with our model
 def load_and_prep_image(filename, img_shape=224, rescale=False):
-  """
-  Reads in an image from filename, turns it into a tensor and reshapes into
-  (224, 224, 3).
-  """
-  # Decode it into a tensor
-#   img = tf.io.decode_image(filename) # no channels=3 means model will break for some PNG's (4 channels)
-  img = tf.io.decode_image(filename, channels=3) # make sure there's 3 colour channels (for PNG's)
-  # Resize the image
-  img = tf.image.resize(img, [img_shape, img_shape])
-  # Rescale the image (get all values between 0 and 1)
-  if rescale:
-      return img/255.
-  else:
-      return img
+    """
+    Reads in an image from filename, turns it into a tensor and reshapes into
+    (224, 224, 3).
+    """
+
+    # print(filename)
+    # f = open(filename, encoding="utf8", errors='ignore')
+    # retina = open('retina.png', encoding="utf8", errors='ignore')
+    # hash0 = imagehash.average_hash(Image.open(f)) 
+    # hash1 = imagehash.average_hash(Image.open(retina)) 
+    #hash0 = imagehash.average_hash(plt.imread(filename)) 
+    #hash1 = imagehash.average_hash(plt.imread('retina.png')) 
+
+
+    # Decode it into a tensor
+    #   img = tf.io.decode_image(filename) # no channels=3 means model will break for some PNG's (4 channels)
+    img = tf.io.decode_image(filename, channels=3) # make sure there's 3 colour channels (for PNG's)
+    # Resize the image
+    img = tf.image.resize(img, [img_shape, img_shape])
+    # Rescale the image (get all values between 0 and 1)
+    if rescale:
+        return img/255.
+    else:
+        return img
+
+
+
+
 
 def update_logger(image, model_used, pred_class, pred_conf, correct=False, user_label=None):
     """
