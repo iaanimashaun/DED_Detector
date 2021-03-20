@@ -15,7 +15,7 @@ from io import BytesIO
 
 
 # Setup environment credentials (you'll need to change these)
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'ded-detector-c9f3391019a8.json' # "daniels-dl-playground-4edbcb2e6e37.json" # change for your GCP key
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'ded-detector-fe8ef200b168.json' # "daniels-dl-playground-4edbcb2e6e37.json" # change for your GCP key
 PROJECT = "ded-detector" # change for your GCP project
 REGION = "us-central1" # change for your GCP region (where your model is hosted)
 
