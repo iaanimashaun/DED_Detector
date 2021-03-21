@@ -5,12 +5,13 @@ from google.api_core.client_options import ClientOptions
 from PIL import Image
 import imagehash
 import matplotlib.pyplot as plt
-import cv2
-import pickle
+#import cv2
 
                         
 
-base_classes = ['Mild', 'Moderate', 'No_DR', 'Proliferative_DR', 'Severe']
+#base_classes = ['Mild', 'Moderate', 'No_DR', 'Proliferative_DR', 'Severe']
+base_classes = ['Mild Diabetic Retinopathy', 'Moderate Diabetic Retinopathy', 'No Diabetic Retinopathy', 'Proliferative Diabetic Retinopathy', 'Severe Diabetic Retinopathy']
+
 
 classes_and_models = {
     "model_1": {

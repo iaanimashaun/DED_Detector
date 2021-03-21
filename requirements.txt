@@ -3,3 +3,7 @@ streamlit
 keras
 matplotlib
 numpy
+Image
+imagehash
+opencv-contrib-python
+Pillow

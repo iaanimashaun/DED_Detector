@@ -9,13 +9,12 @@ from utils import load_and_prep_image, classes_and_models, update_logger, predic
 from PIL import Image
 import imagehash
 import matplotlib.pyplot as plt
-import cv2
-import pickle
+#import cv2
 from io import BytesIO
 
 
 # Setup environment credentials (you'll need to change these)
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'ded-detector-fe8ef200b168.json' # "daniels-dl-playground-4edbcb2e6e37.json" # change for your GCP key
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'ded-detector-4dcd64335a30.json' # "daniels-dl-playground-4edbcb2e6e37.json" # change for your GCP key
 PROJECT = "ded-detector" # change for your GCP project
 REGION = "us-central1" # change for your GCP region (where your model is hosted)
 
@@ -61,7 +60,7 @@ def make_prediction(image, model, class_names):
         pred_class = class_names[tf.argmax(preds[0])]
         pred_conf = tf.reduce_max(preds[0])
         return image, pred_class, pred_conf
-    return 'Not a retina', not_retina, result/64*100
+    return image, not_retina, 0
 
 # Pick the model version
 choose_model = st.sidebar.selectbox(
@@ -128,8 +127,11 @@ if pred_button:
 # And if they did...
 if session_state.pred_button:
     session_state.image, session_state.pred_class, session_state.pred_conf = make_prediction(session_state.uploaded_image, model=MODEL, class_names=CLASSES)
-    st.write(f"Prediction: {session_state.pred_class}, \
+    if session_state.pred_conf != 0:
+        st.write(f"Prediction: {session_state.pred_class}, \
                Confidence: {session_state.pred_conf:.3f}")
+    else:
+        st.write(f"Prediction: {session_state.pred_class})
 
     # Create feedback mechanism (building a data flywheel)
     # session_state.feedback = st.selectbox(

@@ -62,14 +62,14 @@ st.markdown(' # Exploratory Data Analysis')
 expander = st.beta_expander('Data')
 expander.markdown('Source: [Kaggle](https://www.kaggle.com/c/aptos2019-blindness-detection/overview)')
 expander.write('Big Data: 20GB')
-expander.write('Sample subset')
+expander.write('Sample subset was used')
 expander.write('Train data: 2931 images, Validation data: 731 images (20%)')
 
 
 expander = st.beta_expander('Preprocessing')
 expander.write('Gaussian filter')
-expander.write('Resizing - (224, 224) and other transformations')
-expander.write('~500MB')
+expander.write('Resizing - (224, 224) and other transformations like zooming in, width and height shifting')
+expander.write('Eventually downsized to ~500MB')
 
 expander = st.beta_expander('Plots')
 expander.image('images/piechart.png')
@@ -80,10 +80,10 @@ expander.image('images/barchart.png')
 
 
 #expander = st.beta_expander('Image classification')
-st.markdown('# Modelling')
+st.markdown('# Modeling')
 expander = st.beta_expander('ML Algorithm used and model training')
-expander.write('Transfer Learning')
-expander.write('Model: CNN(EfficientNetB0)')
+expander.write('Transfer Learning: (EfficientNetB0)')
+expander.write('Model Architecture: Convolutional Neural Network')
 expander.write('Validation accuracy: 74%')
 expander.image('images/accuracy.png')
 
@@ -93,7 +93,8 @@ expander.image('images/accuracy.png')
 expander = st.beta_expander('Technologies Used')
 expander.write('Python')
 expander.write('Google Colab')
-expander.write('Github')
+expander.write('Github/Git')
+expander.write('Jupyter')
 expander.write('Streamlit')
 expander.write('Heroku')
 expander.write('Google Cloud Platform')
@@ -103,17 +104,17 @@ expander.write('Google Cloud Platform')
 st.markdown('# Challenges')
 expander = st.beta_expander('Limitations')
 expander.write('Computation power')
-expander.write('Time')
-expander.write('Data')
+expander.write('Time Constraint')
+expander.write('Big Data')
 expander.write('Class imbalance')
 
 
 
 
 expander = st.beta_expander('What next?')
+expander.write('Train model with more data for longer epochs')
 expander.write('Identify more pathologies')
 expander.write('Scalalable')
-expander.write('Classification + Localisation')
 
 #file = st.file_uploader('upload your demo file') 
 def file_selector(folder_path='.'): 
