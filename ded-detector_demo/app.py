@@ -46,7 +46,7 @@ def make_prediction(image, model, class_names):
     result = hash0 - hash1
 
     not_retina = 'It seems you did not upload image of a retina scan'
-    if(result < 15):
+    if(result < 18):
 
 
         image = load_and_prep_image(image)
@@ -63,23 +63,24 @@ def make_prediction(image, model, class_names):
     return image, not_retina, 0
 
 # Pick the model version
-choose_model = st.sidebar.selectbox(
-    "Pick model you'd like to use",
-    ("Model 1", # original 10 classes
-     "Model 2", # (11 food classes)", # original 10 classes + donuts
-     "Model 3" )#(11 food classes + non-food class)") # 11 classes (same as above) + not_food class
-)
+choose_model = 'Model'#st.sidebar.selectbox(
+    #"Pick model you'd like to use",
+   # (
+        #("Model") # original 10 classes
+     #"Model 2", # (11 food classes)", # original 10 classes + donuts
+     #"Model 3" )#(11 food classes + non-food class)") # 11 classes (same as above) + not_food class
+#)
 
 # Model choice logic
-if choose_model == "Model 1":
+if choose_model == "Model":
     CLASSES = classes_and_models["model_1"]["classes"]
     MODEL = classes_and_models["model_1"]["model_name"]
-elif choose_model == "Model 2":
-    CLASSES = classes_and_models["model_2"]["classes"]
-    MODEL = classes_and_models["model_2"]["model_name"]
-else:
-    CLASSES = classes_and_models["model_3"]["classes"]
-    MODEL = classes_and_models["model_3"]["model_name"]
+# elif choose_model == "Model 2":
+#     CLASSES = classes_and_models["model_2"]["classes"]
+#     MODEL = classes_and_models["model_2"]["model_name"]
+# else:
+#     CLASSES = classes_and_models["model_3"]["classes"]
+#     MODEL = classes_and_models["model_3"]["model_name"]
 
 # Display info about model and classes
 if st.checkbox("Show stages of Diabetic Eye Disease"):
@@ -131,7 +132,7 @@ if session_state.pred_button:
         st.write(f"Prediction: {session_state.pred_class}, \
                Confidence: {session_state.pred_conf:.3f}")
     else:
-        st.write(f"Prediction: {session_state.pred_class})
+        st.write(f"Prediction: {session_state.pred_class}")
 
     # Create feedback mechanism (building a data flywheel)
     # session_state.feedback = st.selectbox(

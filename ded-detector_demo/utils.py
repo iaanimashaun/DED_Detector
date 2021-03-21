@@ -2,7 +2,7 @@
 import tensorflow as tf
 import googleapiclient.discovery
 from google.api_core.client_options import ClientOptions
-from PIL import Image
+#from PIL import Image
 import imagehash
 import matplotlib.pyplot as plt
 #import cv2
