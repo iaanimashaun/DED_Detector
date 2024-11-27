@@ -1,6 +1,6 @@
 # DED_Detector
 
-![Image of the retina](https://www.davisopticians.co.uk/Uploads/Image/comp%20DRi.jpg "The retina") 
+![Image of the retina](https://www.verywellhealth.com/thmb/urvJI_6CanHUX6Ig5LNuruQbM4M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-308783-003-56acdcd85f9b58b7d00ac8e8.jpg) 
 
 ---
 
